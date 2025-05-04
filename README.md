@@ -56,11 +56,23 @@ O bot envia uma imagem com o logo da FURIA para dar boas-vindas, junto com instr
 
 ## 🛠️ Como Executar Localmente
 
-1. Clone este repositório:
+Siga os passos abaixo para rodar o bot na sua máquina:
 
-   ```bash
-   git clone https://github.com/seu-usuario/furia-bot.git
-   cd furia-bot
+### 1. Pré-requisitos
+
+- Python 3.10 ou superior
+- Conta no Telegram
+
+### 2. Instale as dependências
+
+Crie e ative um ambiente virtual (opcional, mas recomendado):
+
+```bash
+python -m venv venv
+source venv/bin/activate       # Windows: venv\Scripts\activate
+
+pip install python-telegram-bot==20.3.
+
 
 
 ---
