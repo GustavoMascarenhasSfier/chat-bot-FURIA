@@ -60,8 +60,15 @@ Siga os passos abaixo para rodar o bot na sua máquina:
 
 ### 1. Pré-requisitos
 
-- Python 3.10 ou superior
-- Conta no Telegram
+Certifique-se de ter os seguintes requisitos instalados:
+
+- **Python 3.9 ou superior**. Você pode verificar a versão do Python instalada com o comando:
+
+  ```bash
+  python --version
+  ```
+
+- **pip**: O gerenciador de pacotes do Python (normalmente vem junto com o Python).
 
 ### 2. Instale as dependências
 
@@ -69,22 +76,62 @@ Crie e ative um ambiente virtual (opcional, mas recomendado):
 
 ```bash
 python -m venv venv
-source venv/bin/activate       # Windows: venv\Scripts\activate
+source venv/bin/activate       # No Windows: venv\Scriptsctivate
+```
 
-pip install python-telegram-bot==20.3.
+Instale a biblioteca necessária:
 
+```bash
+pip install python-telegram-bot==20.3
+```
 
+### 3. Configure seu bot no Telegram
+
+1. Acesse o [@BotFather](https://t.me/BotFather) no Telegram.
+2. Use o comando `/newbot` para criar um novo bot.
+3. Escolha um nome e um @username.
+4. Copie o token gerado para o seu bot (algo como `123456789:ABCDefghIjkLmnoPQRstuVWxyz`).
+
+### 4. Atualize o código com seu token
+
+No arquivo do bot (por exemplo, `furia_bot.py`), substitua a linha abaixo com o token do seu bot:
+
+```python
+app = ApplicationBuilder().token('SEU_TOKEN_AQUI').build()
+```
+
+Substitua `'SEU_TOKEN_AQUI'` pelo token real gerado pelo **BotFather**.
+
+### 5. Execute o bot
+
+No terminal, execute o script Python:
+
+```bash
+python nome_do_arquivo.py
+```
+
+Exemplo:
+
+```bash
+python furia_bot.py
+```
+
+### 6. Teste no Telegram
+
+- Abra o **Telegram** e busque pelo **@username** do seu bot.
+- Envie o comando `/start` para testar o bot.
+
+Agora o bot estará ativo e pronto para interagir com os fãs da FURIA!
 
 ---
 
 ## 📄 Licença
 
-Este projeto está licenciado sob a MIT License.
-
+Este projeto está licenciado sob a **MIT License**.
 
 ---
 
-##📬 Contato
+## 📬 Contato
 
-Quer contribuir, sugerir melhorias ou reportar bugs?
-Fale comigo via email Gugab1249@gmail.com!
+Quer contribuir, sugerir melhorias ou reportar bugs?  
+Fale comigo via email: [Gugab1249@gmail.com]!
